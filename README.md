@@ -7,13 +7,12 @@ A compilation of examples showcasing the projects I've done using machine learni
 A python script to automate Instagram actions (i.e. commenting, liking, following) on user profiles with the goal of building influence. 
 
 - Unique Parameters
-  - Ignores all private-users/users with less than 25 posts/non-english profiles.
-  - Captures and stores username.
-  - Calculates followers/following ratio to determine profile status (influencer/microinfluencer/regular/spam).
+  - Ignores all profiles that are private-users/less than 25 posts/non-english and must have a followers/following ratio of 0.1-100 (to determine profile status as influencer/microinfluencer/regular/spam).
+  - Captures and stores IG username/other attributes for ML analysis.
+  - Calculates followers/following ratio .
   - Determines if photo has been previously liked and if able, leaves a like or comment.
-    - Per profile, randomly choose 5 posts and interacts with 2.
   - Follows profile when all criteria are met.
-  - Script functions at ~125 profiles per 25 mins. 
+##### Script functions at ~125 profiles per 25 mins. 
 
 [link to script](https://github.com/jimcel-tangonan/exploring-datasets/tree/master/%5B1%5Dautomate-instagram-actions)
 
