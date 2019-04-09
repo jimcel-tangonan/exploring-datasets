@@ -3,7 +3,7 @@
 
 A compilation of examples showcasing the projects I've done using machine learning algorithms and data analysis.
 
-#### 1. Selenium Webdriver - Instagram Social Automation
+#### 1. Selenium Webdriver - Instagram Automation
 
 A python script to automate Instagram actions (i.e. commenting, liking, following) on user profiles with the goal of building influence. 
 
