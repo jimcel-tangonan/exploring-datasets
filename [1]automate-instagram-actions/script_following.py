@@ -91,8 +91,7 @@ def valve(browser, session, element, profile):
     
     elif comment(browser, navigate, element, session, profile):
         time.sleep(1)
-        return True
-    
+        return True  
     
 def interact(element, session, browser, profile):
     
@@ -117,7 +116,6 @@ def interact(element, session, browser, profile):
             
         except:
             pass
-
 
 def internal_gates(browser, profile):
     
@@ -159,7 +157,6 @@ def internal_gates(browser, profile):
     else:
         return True
             
-        
 def external_gates(browser, profile):
     
     def degree_n3():
@@ -264,7 +261,6 @@ def external_gates(browser, profile):
     else:
         return False
     
-
 def engine_(session, profile, browser):
     
     expression = Profile(profile).define_profile()

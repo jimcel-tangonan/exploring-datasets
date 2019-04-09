@@ -27,7 +27,6 @@ def cascade(browser):
     except:
         return False
     
-
 def retract(browser):
     time.sleep(2)
     browser.execute_script('window.history.go(-1)')
@@ -98,8 +97,6 @@ def defined_engine(profile, browser):
         print(f':|:: pulse undefined')
         return True
         
-               
-
 def evaluate_1(session_start, session_end, browser):
     for profile in range(session_start, session_end):
         
