@@ -144,6 +144,12 @@ alternate = {
         '//*[@id="react-root"]/section/main/div/article/div/div[1]/div/form/div[3]/button',
         '//*[@id="react-root"]/section/main/div/article/div/div[1]/div/form/div[4]/button',
         '//*[@id="react-root"]/section/main/div/article/div/div[1]/div/form/div[5]/button'
+    ],
+    'instagram_logo' : [
+        '//*[@id="react-root"]/section/main/div/article/div/div[1]/h1'
+    ],
+    'profile_wait' : [
+        '//*[@id="react-root"]/section/nav/div[2]/div/div/div[3]/div/div[3]/a'
     ]
 }
 
@@ -164,6 +170,3 @@ alternate_ratio = {
         '//*[@id="react-root"]/section/main/div/ul/li[3]/a/span'
     ]
 }
-
-
-

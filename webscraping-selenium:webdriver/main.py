@@ -1,9 +1,8 @@
 import time
 import numpy as np
 
-from _expand import evaluate_0
-from _retain import evaluate_2
-from _contract import evaluate_1
+from script_following import evaluate_0
+from script_unfollowing import evaluate_1
 
 from selenium import webdriver
 import chromedriver_binary
@@ -20,9 +19,24 @@ from selenium.webdriver.common.action_chains import ActionChains
 
 from bs4 import BeautifulSoup
 
+import time
+import numpy as np
+import chromedriver_binary
+
+from selenium import webdriver
+from _contain.authenticate import access
+from configurate import alternate
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.action_chains import ActionChains
+from bs4 import BeautifulSoup
+
 def settings():
     option = webdriver.ChromeOptions()
     option.add_argument('--disable-infobars')
+    
     # option.add_argument('--headless')
     # option.add_argument('--remote-debugging-port=9222')
 
@@ -97,23 +111,7 @@ def initialize(browser):
                     (By.XPATH, convert)
                 )
             ).click()
-
-            convert = alternate['retract']['user_entry'][0]
-            implicit_wait.until(
-                EC.presence_of_element_located((
-                    By.XPATH, convert)
-                )
-            ).click()
-
-            convert = alternate['retract']['user_list'][0]
-            implicit_wait.until(
-                EC.presence_of_element_located((
-                    By.XPATH, convert)
-                )
-            ).click()
-
-            return True
-
+            
         except:
             time.sleep(2)
             convert = alternate['retract']['notification'][0]
@@ -122,26 +120,28 @@ def initialize(browser):
                     (By.XPATH, convert)
                 )
             ).click()
+            
 
-            convert = alternate['retract']['user_entry'][0]
-            implicit_wait.until(
-                EC.presence_of_element_located((
-                    By.XPATH, convert)
-                )
-            ).click()
+        convert = alternate['retract']['user_entry'][0]
+        implicit_wait.until(
+            EC.presence_of_element_located((
+                By.XPATH, convert)
+            )
+        ).click()
 
-            convert = alternate['retract']['user_list'][0]
-            implicit_wait.until(
-                EC.presence_of_element_located((
-                    By.XPATH, convert)
-                )
-            ).click()
+        convert = alternate['retract']['user_list'][0]
+        implicit_wait.until(
+            EC.presence_of_element_located((
+                By.XPATH, convert)
+            )
+        ).click()
 
-            return True
+        return True
+
 
         
         
-    character_profile = input('[0]meiayn or [1]melanie or [2]camille or [3]rei_ave : ')
+    character_profile = input('[0]profile-0 or [1]profile-1 or [2]profile-2 or [3]profile-3 : ')
  
     def inclined(character_profile):
         convert = access[character_profile]
@@ -159,8 +159,7 @@ def initialize(browser):
                     except:
                         pass  
 
-                second_sn = ('//*[@id="react-root"]/section/nav/div[2]/div/div/div[3]/div/div[3]/a')
-                implicit_wait.until(EC.presence_of_element_located((By.XPATH, second_sn)))
+                implicit_wait.until(EC.presence_of_element_located((By.XPATH, alternate['profile_wait'][0])))
                 print(f'profile load: complete')
 
                 if retract_profile():
@@ -187,9 +186,9 @@ def connect(browser):
     while connection_attempts <3:
         try:
             browser.get(base_url)
-            instagram_logo = '//*[@id="react-root"]/section/main/div/article/div/div[1]/h1'
+            
             WebDriverWait(browser,5).until(
-                EC.presence_of_element_located((By.XPATH,instagram_logo))
+                EC.presence_of_element_located((By.XPATH,alternate['instagram_logo'][0]))
             )
             return True
 
@@ -208,9 +207,9 @@ def process(browser):
         initialize(browser)
         
         while condition == '0' or '1' or '2':
-            condition = input('[0] | [1] | [2] :: return: ')
+            condition = input('[0] following | [1] unfollowing :: return: ')
 
-            if condition == '0' or '1' or '2':
+            if condition == '0' or '1':
                 session_defined = 25
                 session_start = 1
                 session_end = 6
@@ -224,9 +223,6 @@ def process(browser):
 
                     elif int(condition) == 1:
                         evaluate_1(session_start, session_end, browser)
-
-                    elif int(condition) == 2:
-                        evaluate_2(session, session_start, session_end, browser)
 
                     else:
                         pass
@@ -244,8 +240,8 @@ def process(browser):
 
 if __name__ == '__main__':
     browser = settings()
-    process(browser)
     
+    process(browser)
     reengage = input('REENGAGE BROWSER: (y/return) ')
     
     if reengage == 'y':
