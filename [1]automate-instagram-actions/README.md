@@ -25,11 +25,12 @@ To calculate the followers/following ratio, the value is preprocessed into an in
 
 I've noticed that when a photo is liked, its class change into `'glyphsSpriteHeart__filled__24__red_5'`. If found, the function `cascade` becomes True and continues the script-actions, otherwise exiting the photo to choose another. Commenting is closely monitored and therefore is only initiated when the profile is divisible by 3.
 
-| IG Profile    | Status        |
+| IG Profile    | Comment Status|
 | ------------- |:-------------:| 
-| IG profile 2  | comment none  | 
-| IG profile 3  | comment       | 
-| IG profile 4  | comment none  |
+| IG profile 2  | False         | 
+| IG profile 3  | True          | 
+| IG profile 4  | False         |
+| IG profile 5  | False         |
 
 ![Alt text](_images/pulse-comment.png?raw=true "liking and commenting")
 ---
