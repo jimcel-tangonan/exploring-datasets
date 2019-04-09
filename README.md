@@ -29,7 +29,7 @@ Using a residual plot to check our predictions because we can't easily plot our 
 ![Alt text](_images/residual-plot.png?raw=true "residual plot.png")
 ---
 
-Scaling and normalizing allowed the LinearRegression model to fit in such as way, that when predicting, previously not explaining any of the variance to now explaining 68%. 
+Scaling and normalizing allowed the LinearRegression model to fit in such as way that when predicting, previously not explaining any deviations, to now explaining 68% of the variance. 
   
   [link to notebook](https://github.com/jimcel-tangonan/exploring-datasets/blob/master/%5B2%5Dmachine-learning/Brain%20weight(grams)%20and%20head%20size(cubic%20cm).ipynb)
 
