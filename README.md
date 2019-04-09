@@ -14,6 +14,8 @@ A python script to automate Instagram actions (i.e. commenting, liking, followin
 
 [link to script](https://github.com/jimcel-tangonan/exploring-datasets/tree/master/1%20automate-instagram-actions)
 
+[a relative link](_automate-instagram-actions)
+
 
 
 #### 2. Brain weight(grams) and head size(cubic cm)
@@ -22,12 +24,12 @@ Source: R.J. Gladstone (1905). "A Study of the Relations of the Brain to to the 
   
 Visualizing how the preprocessing method `standardscaler`, when applied to the data, would benefit the linear_model algorithm. 
 
-![Alt text](_images/standardscaler.png?raw=true "standardscaler.png")
+![Alt text](screenshot/standardscaler.png?raw=true "standardscaler.png")
 ---
 
 Using a residual plot to check our predictions because we can't easily plot our line in 3D space.
 
-![Alt text](_images/residual-plot.png?raw=true "residual plot.png")
+![Alt text](screenshot/residual-plot.png?raw=true "residual plot.png")
 ---
 
 Scaling and normalizing allowed the LinearRegression model to fit in such as way that when predicting, previously not explaining any deviations, to now explaining 68% of the variance. 
