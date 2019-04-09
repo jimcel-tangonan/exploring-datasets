@@ -15,7 +15,7 @@ A python script to automate Instagram actions (i.e. commenting, liking, followin
 - Determines if photo has been previously liked and if able, leaves a like or comment.
   - Per profile, randomly choose 5 posts and interacts with 2.
 - Follows profile when all criteria are met.
-- script works at ~125 profiles per 25 mins. 
+- Script functions at ~125 profiles per 25 mins. 
 
 
 
