@@ -12,7 +12,8 @@ A python script to automate Instagram actions (i.e. commenting, liking, followin
   - Determines if photo has been previously liked and if able, leaves a like or comment.
   - When all criteria are met, the profile is followed; otherwise, it is ignored.
 
-[link to script](https://github.com/jimcel-tangonan/exploring-datasets/tree/master/%5B1%5Dautomate-instagram-actions)
+[link to script](https://github.com/jimcel-tangonan/exploring-datasets/tree/master/1%20automate-instagram-actions)
+
 
 
 #### 2. Brain weight(grams) and head size(cubic cm)
