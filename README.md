@@ -7,11 +7,10 @@ A compilation of examples showcasing the projects I've done using machine learni
 A python script to automate Instagram actions (i.e. commenting, liking, following) on user profiles with the goal of building influence. 
 
 ##### Script functions at ~125 profiles per 25 mins. 
-  - Ignores all profiles that are private-users/less than 25 posts/non-english and must have a followers/following ratio of       0.1-100 (to determine profile status as influencer/microinfluencer/regular/spam).
-  - Captures and stores IG username/other attributes for ML analysis.
-  - Calculates followers/following ratio .
+  - Ignores all profiles that are private-users/having less than 25 posts/has non-english text; additionally, must have a         followers/following ratio of 0.1 - 100 to determine the profile status as influencer/microinfluencer/regular or spam.
+  - Captures and stores IG username and other attributes for ML analysis.
   - Determines if photo has been previously liked and if able, leaves a like or comment.
-  - Follows profile when all criteria are met.
+  - When all criteria are met, the profile is followed; otherwise, it is ignored.
 
 [link to script](https://github.com/jimcel-tangonan/exploring-datasets/tree/master/%5B1%5Dautomate-instagram-actions)
 
@@ -19,6 +18,10 @@ A python script to automate Instagram actions (i.e. commenting, liking, followin
 #### 2. Brain weight(grams) and head size(cubic cm)
 Source: R.J. Gladstone (1905). "A Study of the Relations of the Brain to to the Size of the Head". 
   - Description: Brain weight (grams) and head size (cubic cm) for 237 adults classified by gender and age group.
+  
+Visualizing how the preprocessing method `standardscaler`, when applied to the data, would benefit the linear_model algorithm. 
+
+![Alt text](_images/standardscaler.png?raw=true "standardscaler.png")
   
   [link to notebook](https://github.com/jimcel-tangonan/exploring-datasets/blob/master/%5B2%5Dmachine-learning/Brain%20weight(grams)%20and%20head%20size(cubic%20cm).ipynb)
 
