@@ -223,7 +223,7 @@ def external_gates(browser, profile):
             else:
                 print(f'-- eval_n3 :ratio unmet :: ratio {ratio} followers {followers} following {following}')
         else:
-            print(f'-- eval_n3 :aggregate :: post {post} followers {followers} following {following}')
+            print(f'-- eval_n3 :undefined :: post {post} followers {followers} following {following}')
 
     def degree_n4():
         

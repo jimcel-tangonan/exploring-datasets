@@ -68,9 +68,7 @@ def initialize(browser):
             identity = soup.find_all('input')
 
             access = {
-                
                 'instagram' : []
-                
             }
 
             time.sleep(1)
@@ -137,12 +135,9 @@ def initialize(browser):
         ).click()
 
         return True
-
-
-        
         
     character_profile = input('[0]profile-0 or [1]profile-1 or [2]profile-2 or [3]profile-3 : ')
- 
+    
     def inclined(character_profile):
         convert = access[character_profile]
         if Expressive(convert[0], convert[1]).user_choice():
