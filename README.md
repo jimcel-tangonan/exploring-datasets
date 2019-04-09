@@ -22,6 +22,14 @@ Source: R.J. Gladstone (1905). "A Study of the Relations of the Brain to to the 
 Visualizing how the preprocessing method `standardscaler`, when applied to the data, would benefit the linear_model algorithm. 
 
 ![Alt text](_images/standardscaler.png?raw=true "standardscaler.png")
+---
+
+Using a residual plot to check our predictions because we can't easily plot our line in 3D space.
+
+![Alt text](_images/residual-plot.png?raw=true "residual plot.png")
+---
+
+Scaling and normalizing allowed the LinearRegression model to fit in such as way, that when predicting, previously not explaining any of the variance to now explaining 68%. 
   
   [link to notebook](https://github.com/jimcel-tangonan/exploring-datasets/blob/master/%5B2%5Dmachine-learning/Brain%20weight(grams)%20and%20head%20size(cubic%20cm).ipynb)
 
