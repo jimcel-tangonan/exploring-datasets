@@ -25,9 +25,6 @@ Visualizing how the preprocessing method `standardscaler`, when applied to the d
 ![Alt text](screenshot/standardscaler.png?raw=true "standardscaler.png")
 ---
 
-![Alt text](screenshot/residual.png?raw=true "residual.png")
----
-
 Scaling and normalizing allowed the LinearRegression model to fit in such as way that when predicting, previously not explaining any deviations, to now explaining 68% of the variance. 
 
 ![Alt text](screenshot/linearmodel_score.png?raw=true "linearmodel_score.png")
