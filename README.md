@@ -25,11 +25,14 @@ Visualizing how the preprocessing method `standardscaler`, when applied to the d
 ![Alt text](screenshot/standardscaler.png?raw=true "standardscaler.png")
 ---
 
-Using a residual plot to check our predictions because we can't easily plot our line in 3D space.
-
-![Alt text](screenshot/residual-plot.png?raw=true "residual plot.png")
+![Alt text](screenshot/residual.png?raw=true "residual.png")
 ---
 
 Scaling and normalizing allowed the LinearRegression model to fit in such as way that when predicting, previously not explaining any deviations, to now explaining 68% of the variance. 
+
+![Alt text](screenshot/linearmodel_score.png?raw=true "linearmodel_score.png")
+---
+
+
   
 [link to notebook](_analysis-algorithms/preprocessing.ipynb)
