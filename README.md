@@ -32,9 +32,5 @@ Scaling and normalizing allowed the LinearRegression model to fit in such as way
 | ------------- |:-------------:| :-------------:|
 | StandardScaler| 0.3231        | 0.6805         |
 | Unprocessed   | 1.983e+06     | -135.4         |
-
----
-
-
   
 [link to notebook](_analysis-algorithms/preprocessing.ipynb)
