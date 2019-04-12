@@ -27,7 +27,12 @@ Visualizing how the preprocessing method `standardscaler`, when applied to the d
 
 Scaling and normalizing allowed the LinearRegression model to fit in such as way that when predicting, previously not explaining any deviations, to now explaining 68% of the variance. 
 
-![Alt text](screenshot/linearmodel_score.png?raw=true "linearmodel_score.png")
+
+|               | MSE           | R-squared      |
+| ------------- |:-------------:| :-------------:|
+| StandardScaler| 0.3231        | 0.6805         |
+| Unprocessed   | 1.983e+06     | -135.4         |
+
 ---
 
 
