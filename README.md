@@ -16,7 +16,7 @@ A python script to automate Instagram actions (i.e. commenting, liking, followin
 
 
 
-#### 2. Brain weight(grams) and head size(cubic cm)
+#### 2. A Study of the Relations of the Brain to to the Size of the Head¶
 Source: R.J. Gladstone (1905). "A Study of the Relations of the Brain to to the Size of the Head". 
   - Description: Brain weight (grams) and head size (cubic cm) for 237 adults classified by gender and age group.
   
@@ -33,8 +33,10 @@ Scaling and normalizing allowed the LinearRegression model to fit in such as way
 | StandardScaler| 0.3231        | 0.6805         |
 | Unprocessed   | 1.983e+06     | -135.4         |
 
+K Nearest Neighbor Algorithm; when K=75 we have a testing accuracy of 75%
+
 ![Alt text](screenshot/KNN.png?raw=true "standardscaler.png")
 
-K Nearest Neighbor Algorithm; when K=75 we have a testing accuracy of 75%
+
   
 [link to notebook](_analysis-algorithms/preprocessing.ipynb)
